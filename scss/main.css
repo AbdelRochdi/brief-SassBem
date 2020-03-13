@@ -24,7 +24,14 @@ body {
   background-color: #252b46;
   text-align: center;
   height: 100vh;
-  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav__burger {
@@ -81,6 +88,11 @@ body {
 
 .nav__social img {
   padding: 0.9em;
+}
+
+.nav-active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 body {
