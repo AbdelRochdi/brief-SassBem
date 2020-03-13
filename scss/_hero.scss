@@ -5,16 +5,36 @@
     height: 60vh;
     position: relative;
     &__shape{
-        width: 85%;
-        height: 45vh;
+        width: 80%;
+        height: 48vh;
         background-color: $primary1;
         position: absolute;
         right: 0;
-        top: 2.5em;
-        border-radius: 45% 0 0 45%;
+        top: 3.2em;
+        border-radius: 0% 0 0 30%;
         z-index: -1;
     }
     &__image{
-        width: 90%;
+        width: 100%;
+    }
+}
+
+.hero__article{
+    padding: 1em;
+    text-align: center;
+    &__buttons__chrome{
+        background-color: $primary1;
+        border: none;
+        padding: 1em;
+        border-radius: 0.5em;
+        outline: none;
+        color: white;
+        font-weight: 700;
+        box-shadow: 1px 1px 5px $neutral1;
+    }
+    &__buttons__firefox{
+        @extend .hero__article__buttons__chrome;
+        background-color: lighten($color: $neutral1, $amount: 20%) ;
+        color: black;
     }
 }

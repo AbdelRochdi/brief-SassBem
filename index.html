@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/main.css">
 </head>
+
 <body>
+    <div class="wrapper">
     <header class="header">
         <div class="nav__menu">
             <img class="nav__logo" src="images/logo-bookmark.svg" alt="logo">
             <img class="nav__burger" id="burger" src="images/icon-hamburger.svg" alt="burger">
         </div>
         <nav class="nav">
-        <div class="nav__menu">
-            <img class="nav__logo" src="images/logo-bookmark.svg" alt="logo">
-            <img class="nav__close" id="close" src="images/icon-close.svg" alt="burger">
-        </div>
+            <div class="nav__menu">
+                <img class="nav__logo" src="images/logo-bookmark.svg" alt="logo">
+                <img class="nav__close" id="close" src="images/icon-close.svg" alt="burger">
+            </div>
             <ul class="nav__list">
                 <li><a class="nav__list__links" href="">FEATURES</a></li>
                 <li><a href="">PRICING</a></li>
@@ -35,13 +38,95 @@
             <div class="hero__portrait__shape"></div>
         </div>
         <div class="hero__article">
-        <h1>A Simple Bookmark Manager</h1>
-        <p> A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly.Try it for free. </p>
-        <div class="hero__buttons">
-            <button>Get it on Chrome</button>
-            <button>Get it on Firefox</button>
-        </div>
+            <h1>A Simple Bookmark Manager</h1>
+            <p> A clean and simple interface to organize your favourite websites. Open a new browser tab and see your
+                sites load instantly.Try it for free. </p>
+            <div class="hero__article__buttons">
+                <button class="hero__article__buttons__chrome">Get it on Chrome</button>
+                <button class="hero__article__buttons__firefox">Get it on Firefox</button>
+            </div>
         </div>
     </section>
+    <section class="features">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between
+            your devices so you can access them on the go.</p>
+        <ul class="features__list">
+            <li>Simple Bookmarking</li>
+            <li>Speedy Searching</li>
+            <li>Easy Sharing</li>
+        </ul>
+        <div class="features__articles">
+            <div class="features__articles__portrait">
+                <img src="images/illustration-features-tab-1.svg" alt="" class="features__articles__portrait__images">
+                <div class="features__articles__portrait__shape"></div>
+            </div>
+            <div class="features__articles__text">
+                <h2>Bookmark in one click</h2>
+                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                    control over how you manage your favourite sites.</p>
+                <button>More info</button>
+            </div>
+        </div>
+    </section>
+    <section class="download">
+        <h2>Download the extension</h2>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
+            prioritize.</p>
+        <div class="download__container">
+            <div class="download__container__card1">
+                <img src="images/logo-chrome.svg" alt="">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 6.2</p>
+                <button>Add & Install Extension</button>
+            </div>
+            <div class="download__container__card2">
+                <img src="images/logo-firefox.svg" alt="">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 5.5</p>
+                <button>Add & Install Extension</button>
+            </div>
+            <div class="download__container__card3">
+                <img src="images/logo-opera.svg" alt="">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 4.6</p>
+                <button>Add & Install Extension</button>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
+        </p>
+        <ul class="questions__menu">
+            <li>What is Bookmark?</li>
+            <li>How can I request a new browser?</li>
+            <li>Is there a mobile app?</li>
+            <li>What about other Chromium browsers?</li>
+        </ul>
+        <button>More Info</button>
+    </section>
+    <footer class="footer">
+        <h6>35,000+ ALREADY JOINED</h6>
+        <h2>Stay up-to-date with what we're doing</h2>
+        <form action="get">
+            <input type="email" name="email" id="email">
+            <input type="submit" value="Contact Us">
+        </form>
+        <div class="footer__nav">
+            <img src="images/logo-bookmark.svg" alt="">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="footer__nav__social">
+                <img src="images/icon-facebook.svg" alt="Facebook">
+                <img src="images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
+
 </html>
