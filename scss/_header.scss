@@ -5,11 +5,11 @@
 	text-align: center;
 	height: 100vh;
 	display: none;
-	&__burger{
+	&__burger {
 		height: 1em;
 		margin-top: 0.2em;
 	}
-	&__menu{
+	&__menu {
 		display: flex;
 		justify-content: space-between;
 		padding: 2em 3em;
@@ -17,7 +17,7 @@
 	&__logo {
 		background-color: white;
 	}
-	&__burger{
+	&__burger {
 		background-color: white;
 	}
 	&__list {
@@ -29,27 +29,23 @@
 			padding: 1.1em;
 			width: 60%;
 			margin: 0 auto;
-	
 		}
 		a {
 			text-decoration: none;
 			color: white;
 			letter-spacing: 0.15em;
-			&:hover{
+			&:hover {
 				border: 1px solid white;
 				border-radius: 4px;
 				padding: 0.5em 5em;
 			}
 		}
 	}
-	&__social{
+	&__social {
 		margin-top: 9em;
-		
-		img{
+
+		img {
 			padding: 0.9em;
 		}
-		
 	}
 }
-
-

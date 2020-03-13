@@ -98,7 +98,7 @@ body {
 .hero__portrait {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 60vh;
   position: relative;
 }
@@ -174,7 +174,7 @@ body {
 .hero__portrait {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 60vh;
   position: relative;
 }
@@ -234,8 +234,9 @@ body {
 
 .features__list {
   list-style-type: none;
-  margin: 2em 0;
+  margin: 2em auto;
   padding: 0;
+  max-width: 600px;
 }
 
 .features__list li {
@@ -301,7 +302,7 @@ body {
 .hero__portrait {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 60vh;
   position: relative;
 }
@@ -396,7 +397,7 @@ body {
 .hero__portrait {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 60vh;
   position: relative;
 }
@@ -502,7 +503,7 @@ body {
 .hero__portrait {
   margin: 0 auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 60vh;
   position: relative;
 }
