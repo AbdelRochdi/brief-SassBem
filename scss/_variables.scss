@@ -17,3 +17,28 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+
+@mixin listElem {
+            border-top: 0.5px solid $neutral1;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1em 0;
+            color: $neutral1;
+            &:last-of-type{
+                border-bottom: 0.5px solid $neutral1
+            }
+}
+
+@mixin shape {
+        height: 48vh;
+        background-color: $primary1;
+        position: absolute;
+        z-index: -1;
+}
+@mixin text {
+    padding: 0.5em;
+    text-align: center;
+    p{
+        color: $neutral1
+    }
+}

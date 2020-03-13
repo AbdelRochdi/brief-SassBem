@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'hero';
+
+.features{
+    @include text;
+    &__list{
+        list-style-type: none;
+        margin: 2em 0;
+        padding: 0;
+        
+        li{
+            @include listElem;
+            
+        }
+    }
+    &__articles{
+    &__portrait{
+        position: relative;
+        &__images{
+            width: 90%;
+            margin-bottom: 3em;
+        }
+        &__shape{
+            @include shape;
+            left: -10px;
+            top: 2.3em;
+            border-radius: 0 0 50% 0;
+            width: 90%;
+        }
+
+    }
+    &__text__button{
+        @extend .hero__article__buttons__chrome;
+    }
+}
+}

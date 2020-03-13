@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'hero';
+
+.footer{
+    
+    &__top{
+        background-color: $primary1;
+        color: white;
+        @include text;
+    }
+    &__nav{
+        @include text;
+        background-color: $neutral2;
+        &__list{
+            list-style-type: none;
+            padding: 0;
+            li{
+                margin: 1em;
+                a{
+                text-decoration: none;
+                }
+        
+            }
+        }  
+    }
+}
