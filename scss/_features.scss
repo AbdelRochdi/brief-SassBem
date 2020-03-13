@@ -16,9 +16,12 @@
     &__articles{
     &__portrait{
         position: relative;
+        max-width: 500px;
+        margin: 0 auto;
         &__images{
             width: 90%;
             margin-bottom: 3em;
+            max-width: 350px;
         }
         &__shape{
             @include shape;

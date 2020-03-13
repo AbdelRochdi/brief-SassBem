@@ -13,7 +13,7 @@ body{
 }
 
 .wrapper{
-    width: 375px;
+    
     height: 100%;
     overflow-x: hidden;
 }
@@ -34,6 +34,7 @@ body{
         background-color: $primary1;
         position: absolute;
         z-index: -1;
+        max-width: 400px;
 }
 @mixin text {
     padding: 0.5em;
@@ -41,4 +42,13 @@ body{
     p{
         color: $neutral1
     }
+}
+
+@mixin contact {
+    width: 85%;
+    max-width: 500px;
+    padding: 0.8em 0em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    
 }

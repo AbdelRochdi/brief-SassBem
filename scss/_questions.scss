@@ -5,9 +5,10 @@
     @include text;
     &__menu{
         list-style-type: none;
-        margin: 2em 0;
+        margin: 2em auto;
         padding: 0;
         text-align: left;
+        max-width: 600px;
         li{
             @include listElem;
             color: black;

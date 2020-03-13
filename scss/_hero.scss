@@ -2,7 +2,9 @@
 
 
 .hero__portrait{
+    margin: 0 auto;
     width: 100%;
+    max-width: 500px;
     height: 60vh;
     position: relative;
     &__shape{
@@ -11,9 +13,11 @@
         top: 3.2em;
         border-radius: 0% 0 0 30%;
         width: 80%;
+        
     }
     &__image{
         width: 100%;
+        max-width: 400px;
     }
 }
 
