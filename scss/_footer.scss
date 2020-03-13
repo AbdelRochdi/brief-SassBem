@@ -2,24 +2,48 @@
 @import 'hero';
 
 .footer{
-    
+    margin-top: 1em;
     &__top{
         background-color: $primary1;
         color: white;
         @include text;
+        &__email{
+            width: 79%;
+            padding: 0.8em;
+            margin: 0.5em 0;
+            border-radius: 0.5em;
+            border: none;
+        }
+        &__button{
+            @extend .hero__article__buttons__chrome;
+            background-color: $primary2;
+            width: 85%;
+            padding: 0.8em;
+            margin: 0.5em 0;
+        }
     }
     &__nav{
+        &__logo{
+            background-color: white;
+            padding: 1em;
+        }
         @include text;
         background-color: $neutral2;
         &__list{
             list-style-type: none;
             padding: 0;
             li{
-                margin: 1em;
+                margin: 1.5em;
                 a{
                 text-decoration: none;
+                color: white;
                 }
-        
+            }
+        }
+        &__social{
+            padding: 1em;
+            &__image{
+                padding: 0.5em;
             }
         }  
     }

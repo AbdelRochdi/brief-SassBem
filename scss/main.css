@@ -127,7 +127,7 @@ body {
   color: #9194a1;
 }
 
-.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button {
+.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button, .footer__top__button {
   background-color: #5368df;
   border: none;
   padding: 1em;
@@ -201,7 +201,7 @@ body {
   color: #9194a1;
 }
 
-.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button {
+.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button, .footer__top__button {
   background-color: #5368df;
   border: none;
   padding: 1em;
@@ -322,7 +322,7 @@ body {
   color: #9194a1;
 }
 
-.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button {
+.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button, .footer__top__button {
   background-color: #5368df;
   border: none;
   padding: 1em;
@@ -414,7 +414,7 @@ body {
   color: #9194a1;
 }
 
-.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button {
+.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button, .footer__top__button {
   background-color: #5368df;
   border: none;
   padding: 1em;
@@ -517,7 +517,7 @@ body {
   color: #9194a1;
 }
 
-.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button {
+.hero__article__buttons__chrome, .hero__article__buttons__firefox, .features__articles__text__button, .download__container__card__button, .questions__button, .footer__top__button {
   background-color: #5368df;
   border: none;
   padding: 1em;
@@ -535,6 +535,10 @@ body {
   color: black;
 }
 
+.footer {
+  margin-top: 1em;
+}
+
 .footer__top {
   background-color: #5368df;
   color: white;
@@ -546,10 +550,30 @@ body {
   color: #9194a1;
 }
 
+.footer__top__email {
+  width: 79%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.footer__top__button {
+  background-color: #fa5757;
+  width: 85%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+}
+
 .footer__nav {
   padding: 0.5em;
   text-align: center;
   background-color: #252b46;
+}
+
+.footer__nav__logo {
+  background-color: white;
+  padding: 1em;
 }
 
 .footer__nav p {
@@ -562,10 +586,19 @@ body {
 }
 
 .footer__nav__list li {
-  margin: 1em;
+  margin: 1.5em;
 }
 
 .footer__nav__list li a {
   text-decoration: none;
+  color: white;
+}
+
+.footer__nav__social {
+  padding: 1em;
+}
+
+.footer__nav__social__image {
+  padding: 0.5em;
 }
 /*# sourceMappingURL=main.css.map */
