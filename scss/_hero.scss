@@ -1,45 +1,40 @@
 @import 'variables';
 
-
-.hero__portrait{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 450px;
-    height: 60vh;
-    position: relative;
-    &__shape{
-        @include shape;
-        right: 0;
-        top: 3.2em;
-        border-radius: 0% 0 0 30%;
-        width: 80%;
-        
-    }
-    &__image{
-        width: 100%;
-        max-width: 400px;
-    }
+.hero__portrait {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 450px;
+	height: 60vh;
+	position: relative;
+	&__shape {
+		@include shape;
+		right: 0;
+		top: 3.2em;
+		border-radius: 0% 0 0 30%;
+		width: 80%;
+	}
+	&__image {
+		width: 100%;
+		max-width: 400px;
+	}
 }
 
-.hero__article{
-    @include text;
-    &__buttons__chrome{
-        background-color: $primary1;
-        border: none;
-        padding: 1em;
-        border-radius: 0.5em;
-        outline: none;
-        color: white;
-        font-weight: 700;
-        box-shadow: 1px 1px 5px $neutral1;
-        margin: 0 0.2em;
-    }
-    &__buttons__firefox{
-        @extend .hero__article__buttons__chrome;
-        background-color: lighten($color: $neutral1, $amount: 36%) ;
-        color: black;
-    }
+.hero__article {
+	@include text;
+	&__buttons__chrome {
+		background-color: $primary1;
+		border: none;
+		padding: 1em;
+		border-radius: 0.5em;
+		outline: none;
+		color: white;
+		font-weight: 700;
+		box-shadow: 1px 1px 5px $neutral1;
+		margin: 0 0.2em;
+	}
+	&__buttons__firefox {
+		@extend .hero__article__buttons__chrome;
+		background-color: lighten($color: $neutral1, $amount: 36%);
+		color: black;
+	}
 }
-
-
-

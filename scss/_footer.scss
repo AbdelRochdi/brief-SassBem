@@ -1,45 +1,42 @@
-@import 'variables';
-@import 'hero';
-
-.footer{
-    margin-top: 1em;
-    &__top{
-        background-color: $primary1;
-        color: white;
-        @include text;
-        &__email{
-            @include contact;
-            border: none;
-        }
-        &__button{
-            @extend .hero__article__buttons__chrome;
-            background-color: $primary2;
-            @include contact;
-        }
-    }
-    &__nav{
-        &__logo{
-            background-color: white;
-            padding: 1em;
-        }
-        @include text;
-        background-color: $neutral2;
-        &__list{
-            list-style-type: none;
-            padding: 0;
-            li{
-                margin: 1.5em;
-                a{
-                text-decoration: none;
-                color: white;
-                }
-            }
-        }
-        &__social{
-            padding: 1em;
-            &__image{
-                padding: 0.5em;
-            }
-        }  
-    }
+.footer {
+	margin-top: 1em;
+	&__top {
+		background-color: $primary1;
+		color: white;
+		@include text;
+		&__email {
+			@include contact;
+			border: none;
+		}
+		&__button {
+			@extend .hero__article__buttons__chrome;
+			background-color: $primary2;
+			@include contact;
+		}
+	}
+	&__nav {
+		&__logo {
+			background-color: white;
+			padding: 1em;
+		}
+		@include text;
+		background-color: $neutral2;
+		&__list {
+			list-style-type: none;
+			padding: 0;
+			li {
+				margin: 1.5em;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+		&__social {
+			padding: 1em;
+			&__image {
+				padding: 0.5em;
+			}
+		}
+	}
 }

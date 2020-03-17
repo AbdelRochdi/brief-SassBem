@@ -1,20 +1,17 @@
-@import 'variables';
-@import 'hero';
-
-.questions{
-    @include text;
-    &__menu{
-        list-style-type: none;
-        margin: 2em auto;
-        padding: 0;
-        text-align: left;
-        max-width: 600px;
-        li{
-            @include listElem;
-            color: black;
-        }
-    }
-    &__button{
-        @extend .hero__article__buttons__chrome;
-    }
+.questions {
+	@include text;
+	&__menu {
+		list-style-type: none;
+		margin: 2em auto;
+		padding: 0;
+		text-align: left;
+		max-width: 600px;
+		li {
+			@include listElem;
+			color: black;
+		}
+	}
+	&__button {
+		@extend .hero__article__buttons__chrome;
+	}
 }

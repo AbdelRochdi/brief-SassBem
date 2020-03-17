@@ -1,61 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
 
-$primary1:hsl(231, 69%, 60%);
+$primary1: hsl(231, 69%, 60%);
 $primary2: hsl(0, 94%, 66%);
-$neutral1:hsl(229, 8%, 60%);
-$neutral2:hsl(229, 31%, 21%);
+$neutral1: hsl(229, 8%, 60%);
+$neutral2: hsl(229, 31%, 21%);
 
-body{
-    padding:0;
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
 }
 
-.wrapper{
-    
-    height: 100%;
-    overflow-x: hidden;
+.wrapper {
+	height: 100%;
+	overflow-x: hidden;
 }
 
 @mixin listElem {
-            border-top: 0.5px solid $neutral1;
-            width: 90%;
-            margin: 0 auto;
-            padding: 1em 0;
-            color: $neutral1;
-            &:last-of-type{
-                border-bottom: 0.5px solid $neutral1
-            }
+	border-top: 0.5px solid $neutral1;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em 0;
+	color: $neutral1;
+	&:last-of-type {
+		border-bottom: 0.5px solid $neutral1;
+	}
 }
 
 @mixin shape {
-        height: 48vh;
-        background-color: $primary1;
-        position: absolute;
-        z-index: -1;
-        max-width: 400px;
+	height: 250px;
+	background-color: $primary1;
+	position: absolute;
+	z-index: -1;
+	max-width: 400px;
 }
 @mixin text {
-    padding: 0.5em;
-    text-align: center;
-    p{
-        color: $neutral1
-    }
+	padding: 0.5em;
+	text-align: center;
+	p {
+		color: $neutral1;
+	}
 }
 
 @mixin contact {
-    width: 85%;
-    max-width: 500px;
-    padding: 0.8em 0em;
-    margin: 0.5em 0;
-    border-radius: 0.5em;
-    
+	width: 85%;
+	max-width: 500px;
+	padding: 0.8em 0em;
+	margin: 0.5em 0;
+	border-radius: 0.5em;
 }
 
 @mixin tablet {
-    @media screen and (min-width:800px) {
-        @content;
-        
-    }
+	@media screen and (min-width: 800px) {
+		@content;
+	}
 }
