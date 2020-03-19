@@ -4,7 +4,7 @@
 	background-color: $neutral2;
 	text-align: center;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 10;
 	width: 100%;
@@ -13,6 +13,11 @@
 	&__burger {
 		height: 1em;
 		margin-top: 0.2em;
+		cursor: pointer;
+	}
+	&__close {
+		height: 1em;
+		cursor: pointer;
 	}
 	&__menu {
 		display: flex;
@@ -22,9 +27,7 @@
 	&__logo {
 		background-color: white;
 	}
-	&__burger {
-		background-color: white;
-	}
+
 	&__list {
 		list-style-type: none;
 		margin: 0;

@@ -17,7 +17,7 @@ body {
   background-color: #252b46;
   text-align: center;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
@@ -30,6 +30,12 @@ body {
 .nav__burger {
   height: 1em;
   margin-top: 0.2em;
+  cursor: pointer;
+}
+
+.nav__close {
+  height: 1em;
+  cursor: pointer;
 }
 
 .nav__menu {
@@ -43,10 +49,6 @@ body {
 }
 
 .nav__logo {
-  background-color: white;
-}
-
-.nav__burger {
   background-color: white;
 }
 
