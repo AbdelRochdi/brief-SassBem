@@ -8,6 +8,7 @@
 	top: 0;
 	z-index: 10;
 	width: 100%;
+	opacity: 0.95;
 	transform: translateY(-100%);
 	transition: all 0.2s ease-in-out;
 	&__burger {
@@ -37,6 +38,7 @@
 			padding: 1.1em;
 			width: 60%;
 			margin: 0 auto;
+			
 		}
 		a {
 			text-decoration: none;

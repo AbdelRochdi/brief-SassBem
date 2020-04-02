@@ -9,6 +9,13 @@
 		li {
 			@include listElem;
 			color: black;
+			.accordion{
+				display: flex;
+				justify-content: space-between;
+			}
+			img{
+				height: 0.9em;
+			}
 		}
 	}
 	&__button {

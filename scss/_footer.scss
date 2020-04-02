@@ -8,6 +8,19 @@
 			@include contact;
 			border: none;
 		}
+		&__error {
+			background-color: $primary2;
+			width: 80%;
+			margin: 0 auto;
+			border-radius: 1em;
+			height: 1em;
+			z-index: -1;
+			margin-top: -1.1em;
+			text-align: left;
+			padding: 1em;
+			font-size: 0.7em;
+			margin-bottom: 0.8em;
+		}
 		&__button {
 			@extend .hero__article__buttons__chrome;
 			background-color: $primary2;

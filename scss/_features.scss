@@ -7,6 +7,17 @@
 		max-width: 600px;
 		li {
 			@include listElem;
+			position: relative;
+			&::before {
+				content: '';
+				background-color: $primary2;
+				height: 5px;
+				width: 30%;
+				z-index: 10;
+				position: absolute;
+				left: 35%;
+				bottom: 0em;
+			}
 		}
 	}
 	&__articles {
@@ -15,8 +26,9 @@
 			max-width: 500px;
 			margin: 0 auto;
 			&__images {
-				width: 90%;
+				width: 80%;
 				margin-bottom: 3em;
+				margin-left: 1em;
 				max-width: 350px;
 			}
 			&__shape {
@@ -24,7 +36,7 @@
 				left: -10px;
 				top: 2.3em;
 				border-radius: 0 0 50% 0;
-				width: 90%;
+				width: 70%;
 			}
 		}
 		&__text__button {
