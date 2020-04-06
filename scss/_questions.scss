@@ -12,13 +12,21 @@
 			.accordion{
 				display: flex;
 				justify-content: space-between;
+				cursor: pointer;
 			}
 			img{
 				height: 0.9em;
+			}
+			p{
+				display: none;
 			}
 		}
 	}
 	&__button {
 		@extend .hero__article__buttons__chrome;
 	}
+}
+
+.text-show{
+	display: block;
 }

@@ -8,8 +8,8 @@
 		li {
 			@include listElem;
 			position: relative;
-			&::before {
-				content: '';
+			cursor: pointer;
+			div {
 				background-color: $primary2;
 				height: 5px;
 				width: 30%;
@@ -17,10 +17,19 @@
 				position: absolute;
 				left: 35%;
 				bottom: 0em;
+				display: none;
+			
+			}
+			&:first-of-type div{
+				display: block;
 			}
 		}
 	}
 	&__articles {
+		display: none;
+		&:first-of-type {
+			display: block;
+		}
 		&__portrait {
 			position: relative;
 			max-width: 500px;

@@ -11,13 +11,14 @@
 		&__error {
 			background-color: $primary2;
 			width: 80%;
+			max-width: 478px;
 			margin: 0 auto;
 			border-radius: 1em;
 			height: 1em;
 			z-index: -1;
-			margin-top: -1.1em;
+			margin-top: -1.8em;
 			text-align: left;
-			padding: 1em;
+			padding: 1.5em 1em 0.7em;
 			font-size: 0.7em;
 			margin-bottom: 0.8em;
 		}
