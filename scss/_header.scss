@@ -15,6 +15,9 @@
 		height: 1em;
 		margin-top: 0.2em;
 		cursor: pointer;
+		@include desktop {
+			display: none;
+		}
 	}
 	&__close {
 		height: 1em;
@@ -24,9 +27,47 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 2em 3em;
+		@include desktop{
+			align-items: center;		
+		}
+		&__list-desktop{
+			display: none;
+			list-style: none;
+			li{
+				margin: 0 1.2em;
+			}
+				a{
+					text-decoration: none;
+					color: $neutral2;
+					transition: all 0.2s ease-in-out;
+					&:hover{
+						color: $primary2;
+					}
+				}
+
+				.login{
+					color: white;
+					background-color: $primary2;
+					padding: 0.5em 1em;
+					border-radius: 0.5em;
+					border: 1px solid $primary2;
+					transition: all 0.2s ease-in-out;
+					&:hover{
+						color: $primary2;
+						background-color: white;
+						
+					}
+				}
+			@include desktop{
+				display: flex;
+			}
+		}
 	}
 	&__logo {
 		background-color: white;
+		@include desktop{
+			height: 1.5em;		
+		}
 	}
 
 	&__list {
@@ -38,7 +79,6 @@
 			padding: 1.1em;
 			width: 60%;
 			margin: 0 auto;
-			
 		}
 		a {
 			text-decoration: none;

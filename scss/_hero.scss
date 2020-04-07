@@ -1,25 +1,44 @@
 @import 'variables';
-
-.hero__portrait {
+.hero{
+	margin-bottom: 5em;
+	@include desktop{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;	
+	}
+&__portrait {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 450px;
 	height: 60vh;
 	position: relative;
+	@include desktop{
+		max-width: 800px;	
+	}
 	&__shape {
 		@include shape;
 		right: 0;
 		top: 3.2em;
 		border-radius: 0% 0 0 30%;
 		width: 80%;
+		@include desktop{
+			width: 100%;
+			top: 4em;
+			height: 280px;
+		}
 	}
 	&__image {
 		width: 100%;
 		max-width: 400px;
+		@include desktop{
+			max-width: 600px;
+			margin-left: -2.5em;
+		}
 	}
+	
 }
 
-.hero__article {
+&__article {
 	@include text;
 	&__buttons__chrome {
 		background-color: $primary1;
@@ -31,10 +50,25 @@
 		font-weight: 700;
 		box-shadow: 1px 1px 5px $neutral1;
 		margin: 0 0.2em;
+		transition: all 0.1s ease-in-out;
+		cursor: pointer;
+
+		&:hover{
+			background-color: white;
+			color: $primary1;
+			border: 1px solid $primary1;
+		}
 	}
 	&__buttons__firefox {
 		@extend .hero__article__buttons__chrome;
 		background-color: lighten($color: $neutral1, $amount: 36%);
 		color: black;
 	}
+
+	@include desktop{
+		text-align: left;
+		padding: 0 10em;
+		line-height: 1.8em;	
+	}
+}
 }

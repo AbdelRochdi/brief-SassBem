@@ -14,11 +14,18 @@
             <div class="nav__menu">
                 <img class="nav__logo" src="images/logo-bookmark.svg" alt="logo">
                 <img class="nav__burger" id="burger" src="images/icon-hamburger.svg" alt="burger">
+                <ul class="nav__menu__list-desktop">
+                    <li><a class="nav__list__links" href="">FEATURES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="" class="login">LOGIN</a></li>
+                </ul>
             </div>
             <nav class="nav" id="nav">
                 <div class="nav__menu">
                     <img class="nav__logo" src="images/logo-bookmark.svg" alt="logo">
                     <img class="nav__close" id="close" src="images/icon-close.svg" alt="burger">
+
                 </div>
                 <ul class="nav__list">
                     <li><a class="nav__list__links" href="">FEATURES</a></li>
@@ -50,7 +57,7 @@
         </section>
         <section class="features">
             <h2>Features</h2>
-            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
+            <p class="features__intro">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync
                 between
                 your devices so you can access them on the go.</p>
             <ul class="features__list">
@@ -59,18 +66,22 @@
                 <li>Easy Sharing<div class="bar"></div></li>
             </ul>
             <div class="features__articles">
+                <div class="features__articles__wrapper">
                 <div class="features__articles__portrait">
                     <img class="features__articles__portrait__images" src="images/illustration-features-tab-1.svg"
                         alt="">
                     <div class="features__articles__portrait__shape"></div>
                 </div>
+            
                 <div class="features__articles__text">
                     <h2>Bookmark in one click</h2>
                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                     <button class="features__articles__text__button">More info</button>
                 </div>
             </div>
+            </div>
             <div class="features__articles">
+                <div class="features__articles__wrapper">
                 <div class="features__articles__portrait">
                     <img class="features__articles__portrait__images" src="images/illustration-features-tab-2.svg"
                         alt="">
@@ -82,7 +93,9 @@
                     <button class="features__articles__text__button">More info</button>
                 </div>
             </div>
+            </div>
             <div class="features__articles">
+                <div class="features__articles__wrapper">
                 <div class="features__articles__portrait">
                     <img class="features__articles__portrait__images" src="images/illustration-features-tab-3.svg"
                         alt="">
@@ -94,10 +107,11 @@
                     <button class="features__articles__text__button">More info</button>
                 </div>
             </div>
+            </div>
         </section>
         <section class="download">
             <h2>Download the extension</h2>
-            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
+            <p class="download__intro">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to
                 prioritize.</p>
             <div class="download__container">
                 <div class="download__container__card">
@@ -122,7 +136,7 @@
         </section>
         <section class="questions">
             <h2>Frequently Asked Questions</h2>
-            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email
+            <p class="questions__intro">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email
                 us.
             </p>
             <ul class="questions__menu">
@@ -139,7 +153,7 @@
             <div class="footer__top">
                 <h6>35,000+ ALREADY JOINED</h6>
                 <h2>Stay up-to-date with what we're doing</h2>
-                <form action="get">
+                <form class="footer__top__form" action="get">
                     <input type="email" name="email" id="email" placeholder="Enter your email address" class="footer__top__email">
                     <div class="footer__top__error">Whoops, make sure it's an email</div>
                     <input type="submit" value="Contact Us" class="footer__top__button">

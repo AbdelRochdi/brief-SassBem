@@ -42,12 +42,15 @@ questions.addEventListener('click', slideText);
 
 function slideText(e) {
 	console.log(e.target);
-	console.log(e.target.parentElement);
+	console.log(e.target.children[0]);
 	if (e.target.classList.contains('accordion')) {
 		if (e.target.parentElement.lastElementChild.style.display === 'block') {
 			e.target.parentElement.lastElementChild.style.display = 'none';
+			e.target.children[0].classList.toggle('rotate');
+
 		} else {
 			e.target.parentElement.lastElementChild.style.display = 'block';
+			e.target.children[0].classList.toggle('rotate');
 		}
 	}
 	e.preventDefault();

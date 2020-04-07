@@ -1,5 +1,9 @@
 .questions {
 	@include text;
+	&__intro {
+		max-width: 500px;
+		margin: 0 auto;
+	}
 	&__menu {
 		list-style-type: none;
 		margin: 2em auto;
@@ -9,15 +13,19 @@
 		li {
 			@include listElem;
 			color: black;
-			.accordion{
+			.accordion {
 				display: flex;
 				justify-content: space-between;
 				cursor: pointer;
+				
+				&:hover {
+					color: $primary2;
+				}
 			}
-			img{
+			img {
 				height: 0.9em;
 			}
-			p{
+			p {
 				display: none;
 			}
 		}
@@ -27,6 +35,11 @@
 	}
 }
 
-.text-show{
+.text-show {
 	display: block;
+}
+
+.rotate {
+	transform: rotate(180deg);
+	transition: all 0.1s ease-in;
 }

@@ -1,14 +1,25 @@
 .features {
+	&__intro {
+		max-width: 500px;
+		margin: 0 auto;
+	}
 	@include text;
 	&__list {
 		list-style-type: none;
 		margin: 2em auto;
 		padding: 0;
 		max-width: 600px;
+		@include desktop {
+			display: flex;
+		}
 		li {
 			@include listElem;
 			position: relative;
 			cursor: pointer;
+			@include desktop {
+				border-top: none;
+				border-bottom: 0.5px solid $neutral1;
+			}
 			div {
 				background-color: $primary2;
 				height: 5px;
@@ -18,19 +29,32 @@
 				left: 35%;
 				bottom: 0em;
 				display: none;
-			
+				@include desktop {
+					width: 100%;
+					left: 0;
+				}
 			}
-			&:first-of-type div{
+			&:first-of-type div {
 				display: block;
 			}
 		}
 	}
 	&__articles {
 		display: none;
+		margin-bottom: 5em;
 		&:first-of-type {
 			display: block;
 		}
+		&__wrapper {
+			@include desktop {
+				display: flex;
+				
+			}
+		}
 		&__portrait {
+			@include desktop {
+				width: 100%;
+			}
 			position: relative;
 			max-width: 500px;
 			margin: 0 auto;
@@ -39,6 +63,9 @@
 				margin-bottom: 3em;
 				margin-left: 1em;
 				max-width: 350px;
+				@include desktop {
+					max-width: 600px;
+				}
 			}
 			&__shape {
 				@include shape;
@@ -46,10 +73,26 @@
 				top: 2.3em;
 				border-radius: 0 0 50% 0;
 				width: 70%;
+				@include desktop {
+					left: -8em;
+					width: 100%;
+					max-width: 500px;
+					height: 280px;
+				}
 			}
 		}
-		&__text__button {
-			@extend .hero__article__buttons__chrome;
+		&__text {
+			@include desktop {
+				width: 40%;
+				text-align: left;
+				margin-top: 2em;
+				p {
+					width: 80%;
+				}
+			}
+			&__button {
+				@extend .hero__article__buttons__chrome;
+			}
 		}
 	}
 }
